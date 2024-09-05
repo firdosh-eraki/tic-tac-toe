@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(purple,blue,pink );
+}
+.game-board{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    gap: 5px;
+}
+.cell{
+    display: flex;
+    justify-content: center;
+    background-color: violet;
+    align-items: center;
+    border: 1px solid#333;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: bakground-color 0.2s;
+    
+
+}
+cell:hover{
+    background-color: #9f9f9f;
+}
