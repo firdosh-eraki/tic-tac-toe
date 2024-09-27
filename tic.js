@@ -23,7 +23,7 @@ function handleClick(e) {
   cell.textContent = currentPlayer;
 
   if (checkWin()) {
-    setTimeout(() => alert(`${currentPlayer}wins!`), 2000);
+    setTimeout(() => alert(`${currentPlayer}wins!`), 100);
     return;
   }
   currentPlayer = currentPlayer === "X" ? "O" : "X";
